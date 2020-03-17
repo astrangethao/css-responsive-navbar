@@ -5,6 +5,18 @@ body {
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
 main {
   margin-left: 5rem;
   padding: 1rem;
@@ -17,4 +29,18 @@ main {
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--bg-primary);
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
